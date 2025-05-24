@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px; /* Rounded corners only on the left */
+  transition: background 200ms;
+  height: 69px; /* Match input height */
+  margin-right: -3px; /* Removes space between button and input */
+}
+
+.clearButton:hover {
+  background-color: darkred;
+}
+
+.adder {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  border: 3px solid white;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  padding: 5px;
+  border-radius: 0 8px 8px 0; /* Rounded corners only on the right */
+}
+
+.adder input {
+  outline: none;
+  background: transparent;
+  color: white;
+  height: 50px;
+  flex-grow: 1;
+  padding-left: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+}
+
+.adder span {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.8;
+  cursor: pointer;
+  transition: all 200ms;
+  color: white;
+  margin-right: 10px;
+}
+
+.adder span:hover {
+  transform: rotate(180deg);
+}
